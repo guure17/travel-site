@@ -1,0 +1,16 @@
+.generic-content-container{
+ p{
+    line-height:1.65;
+    margin-bottom:1.2rem;
+    
+    text-align:justify;
+    a:link{
+        font-weight: 700; /*bold*/
+        color: $mainOrange;       
+    }  
+    @mixin atSmall{
+        font-size:1.125rem;
+    }  
+ }
+ 
+}

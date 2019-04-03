@@ -1,0 +1,24 @@
+.row{
+         
+               
+               
+    @mixin atMedium{
+        &--gutters>div{     /* this code will be applied to its direct children not this div*/
+            padding-right:65px;        
+        }       
+          
+        &--column1{
+            float:left;
+             width:33.33%;           
+                   }
+          &--column2{
+           float: left;
+              width:66.33%;
+              height:100%;
+              }
+    }   
+.clear-float{ clear: both;}
+}
+.landscape{
+    width:500px;
+}
