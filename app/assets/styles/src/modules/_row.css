@@ -1,6 +1,4 @@
-.row{
-         
-               
+.row{             
                
     @mixin atMedium{
         &--gutters>div{     /* this code will be applied to its direct children not this div*/
@@ -17,6 +15,19 @@
               height:100%;
               }
     }   
+    &--colSize6{
+        font-size: 1.0rem;
+        font-weight: 150;
+          @mixin atSmall{
+            width:50%;
+            float: left;     
+           padding-left: 3em;
+            text-align: justify; 
+          }       
+    }
+    &--features{
+    
+    }
 .clear-float{ clear: both;}
 }
 .landscape{

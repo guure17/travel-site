@@ -677,6 +677,25 @@ margin-bottom:0.5em ;
               }
     }
 
+.row--colSize6{
+        font-size: 1.0rem;
+        font-weight: 150;       
+    }
+
+@media(min-width: 530px){
+
+.row--colSize6{
+            width:50%;
+            float: left;     
+           padding-left: 3em;
+            text-align: justify       
+    }
+    }
+
+.row--features{
+    
+    }
+
 .row .clear-float{ clear: both;}
 
 .landscape{
@@ -701,4 +720,32 @@ margin-bottom:0.5em ;
         font-size:1.125rem  
  }
     }
+
+.section-title{
+    text-align: center;
+    font-weight: 300;
+
+}
+
+@media(min-width: 530px){
+
+.section-title{
+        font-size:3.75rem
+
+}       
+        .section-title strong{
+            font-weight:500;
+        }
+    }
+
+.section-title--subtitle{
+      
+          
+    }
+
+.section-title--ico{
+      padding-right:0.5rem;
+      height:30px;
+  }
+
 

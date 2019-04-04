@@ -1,0 +1,21 @@
+.section-title{
+    text-align: center;
+    font-weight: 300;
+    @mixin atSmall{
+        font-size:3.75rem;       
+        strong{
+            font-weight:500;
+        }
+    }
+    &--subtitle{
+      
+          
+    }
+
+
+  &--ico{
+      padding-right:0.5rem;
+      height:30px;
+  }
+
+}
