@@ -16,17 +16,24 @@
               }
     }   
     &--colSize6{
-        font-size: 1.0rem;
+        position: relative;
+        font-size: 1.0rem;       
         font-weight: 150;
           @mixin atSmall{
             width:50%;
             float: left;     
-           padding-left: 3em;
-            text-align: justify; 
+           margin-bottom:100px;
+           padding:0 3rem 0 3rem;    
+           text-align: justify; 
+          
           }       
     }
+    p{
+        padding-bottom: 30px;
+    }
     &--features{
-    
+        padding-left: 3em;
+     
     }
 .clear-float{ clear: both;}
 }
