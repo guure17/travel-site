@@ -7,7 +7,18 @@
   &--blue{
     background-color:$mainBlue;
     color:#fff;   
+    padding-bottom:0;
 }
+&--testomonials{
+  background-color:lightcyan;
+  padding-bottom: 0;
+  @mixin atMedium{
+    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+    background-size:cover;
+   padding-top: 0;
 
+  }
+ 
+}
 
 }

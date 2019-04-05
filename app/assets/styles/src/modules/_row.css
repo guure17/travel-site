@@ -15,28 +15,52 @@
               height:100%;
               }
     }   
-    &--colSize6{
-        position: relative;
-        font-size: 1.0rem;       
-        font-weight: 150;
-          @mixin atSmall{
-            width:50%;
-            float: left;     
-           margin-bottom:100px;
-           padding:0 3rem 0 3rem;    
-           text-align: justify; 
-          
-          }       
-    }
+        &--colSize6{
+            position: relative;
+            font-size: 1.0rem;       
+            font-weight: 150;
+            @mixin atSmall{
+                width:50%;
+                float: left;     
+            
+            padding:0 1rem 0 3rem;    
+            text-align: justify; 
+            
+            }       
+        }
+        &--colSize4{
+                       
+            float: left;
+            margin-bottom: 90px;
+            @mixin atSmall{
+                width: 33.33%;
+                margin-bottom: 0;
+            }
+
+        }
     p{
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
     &--features{
         padding-left: 3em;
      
+    }
+    /* Begin Equal Hight Rule of the three div of testomonials*/
+    &--equal-height-atMedium{
+        @mixin atSmall{
+            display: flex;
+            
+              }
+        & > div{
+            float:none;
+            display:flex;
+            
+            }
+        
     }
 .clear-float{ clear: both;}
 }
 .landscape{
     width:500px;
 }
+

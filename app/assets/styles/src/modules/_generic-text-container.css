@@ -1,7 +1,6 @@
 .generic-content-container{
  p{
-    line-height:1.65;
-    margin-bottom:1.2rem;
+    line-height:1.65;   
     
     text-align:justify;
     a:link{

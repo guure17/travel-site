@@ -598,7 +598,6 @@ overflow: hidden;
 .page-section{
   padding: 1.5rem 0;
 
-
 }
 
 @media(min-width: 530px){
@@ -606,14 +605,30 @@ overflow: hidden;
 .page-section{
     padding: 3.5rem 0
 
-
 }
     }
 
 .page-section--blue{
     background-color:#2f5572;
     color:#fff;   
+    padding-bottom:0;
 }
+
+.page-section--testomonials{
+  background-color:lightcyan;
+  padding-bottom: 0;
+ 
+}
+
+@media(min-width: 800px){
+
+.page-section--testomonials{
+    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+    background-size:cover;
+   padding-top: 0
+ 
+}
+    }
 
 .headline{
 font-weight:300;
@@ -678,30 +693,66 @@ margin-bottom:0.5em ;
     }
 
 .row--colSize6{
-        position: relative;
-        font-size: 1.0rem;       
-        font-weight: 150;       
-    }
+            position: relative;
+            font-size: 1.0rem;       
+            font-weight: 150;       
+        }
 
 @media(min-width: 530px){
 
 .row--colSize6{
-            width:50%;
-            float: left;     
-           margin-bottom:100px;
-           padding:0 3rem 0 3rem;    
-           text-align: justify       
+                width:50%;
+                float: left;     
+            
+            padding:0 1rem 0 3rem;    
+            text-align: justify       
+        }
     }
+
+.row--colSize4{
+                       
+            float: left;
+            margin-bottom: 90px;
+
+        }
+
+@media(min-width: 530px){
+
+.row--colSize4{
+                width: 33.33%;
+                margin-bottom: 0
+
+        }
     }
 
 .row p{
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
 
 .row--features{
         padding-left: 3em;
      
     }
+
+/* Begin Equal Hight Rule of the three div of testomonials*/
+
+@media(min-width: 530px){
+
+.row--equal-height-atMedium{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex
+        
+    }
+    }
+
+.row--equal-height-atMedium > div{
+            float:none;
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+            
+            }
 
 .row .clear-float{ clear: both;}
 
@@ -710,8 +761,7 @@ margin-bottom:0.5em ;
 }
 
 .generic-content-container p{
-    line-height:1.65;
-    margin-bottom:1.2rem;
+    line-height:1.65;   
     
     text-align:justify;  
  }
@@ -777,10 +827,46 @@ margin-bottom:0.5em ;
 .section-title--ico{
       height:30px;
       position: absolute;
-      left:0;
-    
-    
-      
+      left:0;       
   }
+
+.section-title--blue{
+      color:#2f5572;
+     padding-bottom:60px;
+   
+  }
+
+.testomonial{
+    background-color: rgba(255, 2555, 255, .8);
+    padding:0 1.8125rem 0 1.8125rem;
+    text-align: justify;
+
+}
+
+.testomonial--photo{
+        border-radius: 50%;
+        overflow: hidden;
+        width:160px;
+        height: 160px;
+        margin: 0 auto -80px auto;
+        position: relative;
+        top:-80px;
+        border: 6px solid rgba(255, 2555, 255, .8);        
+    }
+
+.testomonial--title{
+        color:#2f5572;
+        text-align:center;
+        font-size:1.5rem;
+        font-weight:500;
+        margin:0;
+    }
+
+.testomonial--subtitle{
+        color:#d59541;
+        text-align:center;
+        font-size:0.9375rem;
+        margin:0;
+    }
 
 
