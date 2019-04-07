@@ -603,7 +603,7 @@ overflow: hidden;
 @media(min-width: 530px){
 
 .page-section{
-    padding: 3.5rem 0
+    padding: 1.0rem 0
 
 }
     }
@@ -615,6 +615,7 @@ overflow: hidden;
 }
 
 .page-section--testomonials{
+  position: relative;
   background-color:lightcyan;
   padding-bottom: 0;
  
@@ -694,7 +695,7 @@ margin-bottom:0.5em ;
 
 .row--colSize6{
             position: relative;
-            font-size: 1.0rem;       
+            font-size: 1.rem;       
             font-weight: 150;       
         }
 
@@ -778,36 +779,50 @@ margin-bottom:0.5em ;
  }
     }
 
-.section-head--ico{
-    height:30px;
-   
+.section-title{  
+    text-align: center;
+    font-weight: 300;
+     width:400px;
+    margin: auto;
+
+}
+
+.section-title--head{
+        position: relative;
+    }
+
+@media(min-width: 530px){
+
+.section-title--head{
+            font-size:1.75rem
+    }            
+            .section-title--head strong{
+                font-weight:700;
+            }
+    }
+
+.section-title--head-ico{    
+        position: absolute;
+        left:50%;
+        top:-55px;           
+           zoom:0.4;
 }
 
 @media(min-width: 530px){
 
-.section-head--ico{
-    height:50px;
-    padding-right: 1rem
-   
+.section-title--head-ico{
+            left:100px;
+            top:0
 }
     }
 
-.section-title{
-    text-align: center;
-    font-weight: 300;
-
-}
+/* zooming fixed width and height icons*/
 
 @media(min-width: 530px){
 
-.section-title{
-        font-size:3.75rem
-
-}   
-            
-        .section-title strong{
-            font-weight:500;
-        }
+.section-title--head-ico{
+                zoom:0.6
+}
     }
 
 .section-title--subtitle{
@@ -825,16 +840,48 @@ margin-bottom:0.5em ;
     }
 
 .section-title--ico{
-      height:30px;
-      position: absolute;
-      left:0;       
+           position: absolute;
+           left:0;          
+           zoom:0.4;
+          
+           
+     
   }
+
+/* zooming fixed width and height icons*/
+
+@media(min-width: 530px){
+
+.section-title--ico{
+        zoom:0.6
+          
+           
+     
+  }
+    }
 
 .section-title--blue{
       color:#2f5572;
-     padding-bottom:60px;
+     padding-bottom:6.75rem;
+     padding-top:1.725rem;
+    
    
   }
+
+.tesimonial-icon{
+    position: absolute;
+    
+           zoom:0.4;
+}
+
+/* zooming fixed width and height icons*/
+
+@media(min-width: 530px){
+
+.tesimonial-icon{
+                zoom:0.6
+}
+    }
 
 .testomonial{
     background-color: rgba(255, 2555, 255, .8);
@@ -868,5 +915,97 @@ margin-bottom:0.5em ;
         font-size:0.9375rem;
         margin:0;
     }
+
+/*Do not edit modules/_sprite directly as it is generated automatically by Gulp
+instead edit gulp/templates/sprite*/
+
+.icon{
+      background-image:url('/assets/images/sprite/sprite-69f19c2e.svg'); /* this will be generated one time*/
+    }
+
+.icon--clear-view-escapes 
+{
+   width:142.4px;
+  height:59.53px;
+  background-position:0 0;
+}
+
+.icon--comment 
+{
+   width:64px;
+  height:64px;
+  background-position:99.70443349753694% 0;
+}
+
+.icon--facebook 
+{
+   width:21.23px;
+  height:42.01px;
+  background-position:26.040607071652357% 45.795830448496034%;
+}
+
+.icon--fire 
+{
+   width:56px;
+  height:64px;
+  background-position:0 99.56481481481481%;
+}
+
+.icon--globe 
+{
+   width:64px;
+  height:64px;
+  background-position:27.586206896551722% 99.56481481481481%;
+}
+
+.icon--instagram 
+{
+   width:42.01px;
+  height:42.01px;
+  background-position:63.2917018534157% 49.234556504346486%;
+}
+
+.icon--mail 
+{
+   width:64px;
+  height:48px;
+  background-position:0 48.00806451612903%;
+}
+
+.icon--rain 
+{
+   width:64px;
+  height:64px;
+  background-position:99.70443349753694% 59.25925925925926%;
+}
+
+.icon--star 
+{
+   width:64px;
+  height:64px;
+  background-position:59.11330049261084% 99.56481481481481%;
+}
+
+.icon--twitter 
+{
+   width:51.78px;
+  height:42.06px;
+  background-position:94.04330452560171% 98.50700323226104%;
+}
+
+.icon--wifi 
+{
+   width:60px;
+  height:64px;
+  background-position:68.79227053140097% 0;
+}
+
+.icon--youtube 
+{
+   width:34.75px;
+  height:42px;
+  background-position:36.69752421959096% 45.792307692307695%;
+}
+
 
 

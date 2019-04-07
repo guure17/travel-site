@@ -1,41 +1,71 @@
-.section-head--ico{
-    height:30px;
-    @mixin atSmall{
-    height:50px;
-    padding-right: 1rem;
-    }
-   
-}
-.section-title{
+
+.section-title{  
     text-align: center;
     font-weight: 300;
-    @mixin atSmall{
-        font-size:3.75rem;   
-            
-        strong{
-            font-weight:500;
+     width:400px;
+    margin: auto;
+ 
+   
+    &--head{
+        position: relative;
+        @mixin atSmall{
+            font-size:1.75rem;            
+            strong{
+                font-weight:700;
+            }        
         }
     }
+    &--head-ico{    
+        position: absolute;
+        left:50%;
+        top:-55px;
+        @mixin atSmall{
+            left:100px;
+            top:0;
+        }           
+           zoom:0.4;/* zooming fixed width and height icons*/
+        @mixin atSmall{
+                zoom:0.6;
+               }
+}
+    
     &--subtitle{
         margin-left:35px;
         margin-bottom:0px;
-        
+               
    @mixin atSmall{
     margin-left:0px;
    }
           
     }
-
-
+ 
+   
+      
   &--ico{
-      height:30px;
-      position: absolute;
-      left:0;       
+           position: absolute;
+           left:0;          
+           zoom:0.4;/* zooming fixed width and height icons*/
+    @mixin atSmall{
+        zoom:0.6;
+    }
+          
+           
+     
   }
   &--blue{
       color:$mainBlue;
-     padding-bottom:60px;
+     padding-bottom:6.75rem;
+     padding-top:1.725rem;
+    
    
   }
 
+}
+.tesimonial-icon{
+    position: absolute;
+    
+           zoom:0.4;/* zooming fixed width and height icons*/
+        @mixin atSmall{
+                zoom:0.6;
+               }
 }
