@@ -32,6 +32,6 @@
                    .pipe(browserSync.stream());
 });
 gulp.task("scriptsRefresh",["scripts"],function(){
-/*browserSync.reload(); /* reload the page after scripts run */
+//browserSync.reload(); /* reload the page after scripts run */
 
 });

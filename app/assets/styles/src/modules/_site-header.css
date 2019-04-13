@@ -5,7 +5,11 @@
     transition: background-color 1s ease-out;
    
     @mixin atMedium{
-        background-color: rgba(47 ,85,114, 0.30);
+        position:fixed;
+        background-color: rgba(47 ,85,114, .30);
+        &--dark{
+            background-color: rgba(23 ,51,72, .90);
+        }
     }
    
     padding:10px 0 0 0;

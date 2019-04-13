@@ -1046,9 +1046,13 @@ instead edit gulp/templates/sprite*/
 @media(min-width: 800px){
 
 .site-header{
-        background-color: rgba(47 ,85,114, 0.30)
+        position:fixed;
+        background-color: rgba(47 ,85,114, .30)
 
 }
+        .site-header--dark{
+            background-color: rgba(23 ,51,72, .90);
+        }
     }
 
 .site-header--btn{
@@ -1251,5 +1255,19 @@ instead edit gulp/templates/sprite*/
         padding: 12px 0px
   
   }
+    }
+
+.reveal-feature-item{
+    opacity:0;
+    -webkit-transition: all 1.5s ease-in-out;
+    transition: all 1.5s ease-in-out;
+    -webkit-transform:scale(1.5);
+            transform:scale(1.5);
+}
+
+.reveal-feature-item--isVisible{
+        opacity: 1;
+        -webkit-transform:scale(1);
+                transform:scale(1);
     }
 
