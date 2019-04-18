@@ -4,7 +4,6 @@
     font-weight: 300;
      width:400px;
     margin: auto;
- 
    
     &--head{
         position: relative;
@@ -37,29 +36,24 @@
     margin-left:0px;
    }
           
-    }
- 
-   
-      
+    }   
   &--ico{
            position: absolute;
            left:0;          
            zoom:0.4;/* zooming fixed width and height icons*/
     @mixin atSmall{
         zoom:0.6;
-    }
-          
-           
+    }        
      
   }
   &--blue{
       color:$mainBlue;
      padding-bottom:6.75rem;
-     padding-top:1.725rem;
-    
-   
+     padding-top:1.725rem;  
   }
-
+ &--for-modal{    
+    padding-bottom:1.2rem;
+}
 }
 .tesimonial-icon{
     position: absolute;
@@ -68,4 +62,6 @@
         @mixin atSmall{
                 zoom:0.6;
                }
+               
+
 }

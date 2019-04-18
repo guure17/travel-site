@@ -1,7 +1,7 @@
 var gulp=require('gulp'),
     webpack=require('webpack');
 
-    gulp.task('scripts',function(callback){
+    gulp.task('scripts',['modernizr'],function(callback){
       /*  '../../webpack.config' is the postion of webpack.config file relative
       to you location, we move upwards to folders to get where this file lives in */  
         webpack(require('../../webpack.config.js'), function(err, stats){

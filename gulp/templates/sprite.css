@@ -3,7 +3,7 @@ instead edit gulp/templates/sprite*/
 {{#shapes}}
   {{#first}}
     .icon{
-      background-image:url('/icons/sprite/css/{{{sprite}}}'); /* this will be generated one time*/
+      background-image:url('../../icons/sprite/css/{{{sprite}}}'); /* this will be generated one time*/
     }
   {{/first}}
 .icon--{{base}} 

@@ -595,6 +595,12 @@ overflow: hidden;
 }
     }
 
+.wrapper--for-modal{
+        margin:auto;
+        width:500px;
+        padding-bottom:0;
+    }
+
 .page-section{
   padding: 1.5rem 0;
 
@@ -624,7 +630,7 @@ overflow: hidden;
 @media(min-width: 800px){
 
 .page-section--testomonials{
-    background: url('/assets/images/testimonials-bg.jpg') top center no-repeat;
+    background: url('../../assets/images/testimonials-bg.jpg') top center no-repeat;
     background-size:cover;
    padding-top: 0
  
@@ -784,7 +790,6 @@ margin-bottom:0.5em ;
     font-weight: 300;
      width:400px;
     margin: auto;
-
 }
 
 .section-title--head{
@@ -842,9 +847,7 @@ margin-bottom:0.5em ;
 .section-title--ico{
            position: absolute;
            left:0;          
-           zoom:0.4;
-          
-           
+           zoom:0.4;        
      
   }
 
@@ -853,9 +856,7 @@ margin-bottom:0.5em ;
 @media(min-width: 530px){
 
 .section-title--ico{
-        zoom:0.6
-          
-           
+        zoom:0.6        
      
   }
     }
@@ -863,15 +864,19 @@ margin-bottom:0.5em ;
 .section-title--blue{
       color:#2f5572;
      padding-bottom:6.75rem;
-     padding-top:1.725rem;
-    
-   
+     padding-top:1.725rem;  
   }
+
+.section-title--for-modal{    
+    padding-bottom:1.2rem;
+}
 
 .tesimonial-icon{
     position: absolute;
     
            zoom:0.4;
+               
+
 }
 
 /* zooming fixed width and height icons*/
@@ -880,6 +885,8 @@ margin-bottom:0.5em ;
 
 .tesimonial-icon{
                 zoom:0.6
+               
+
 }
     }
 
@@ -920,91 +927,91 @@ margin-bottom:0.5em ;
 instead edit gulp/templates/sprite*/
 
 .icon{
-      background-image:url('/assets/images/sprite/sprite-69f19c2e.svg'); /* this will be generated one time*/
+      background-image:url('../../icons/sprite/css/sprite-e79e95cc.svg'); /* this will be generated one time*/
     }
 
 .icon--clear-view-escapes 
 {
-   width:142.4px;
-  height:59.53px;
+   width:144.4px;
+  height:61.53px;
   background-position:0 0;
 }
 
 .icon--comment 
 {
-   width:64px;
-  height:64px;
-  background-position:99.70443349753694% 0;
+   width:66px;
+  height:66px;
+  background-position:99.71014492753623% 0;
 }
 
 .icon--facebook 
 {
-   width:21.23px;
-  height:42.01px;
-  background-position:26.040607071652357% 45.795830448496034%;
+   width:23.23px;
+  height:44.01px;
+  background-position:26.424310365536293% 45.92133741323979%;
 }
 
 .icon--fire 
 {
-   width:56px;
-  height:64px;
-  background-position:0 99.56481481481481%;
+   width:58px;
+  height:66px;
+  background-position:0 99.58035714285714%;
 }
 
 .icon--globe 
 {
-   width:64px;
-  height:64px;
-  background-position:27.586206896551722% 99.56481481481481%;
+   width:66px;
+  height:66px;
+  background-position:28.019323671497585% 99.58035714285714%;
 }
 
 .icon--instagram 
 {
-   width:42.01px;
-  height:42.01px;
-  background-position:63.2917018534157% 49.234556504346486%;
+   width:44.01px;
+  height:44.01px;
+  background-position:63.059522249879905% 49.25740726919919%;
 }
 
 .icon--mail 
 {
-   width:64px;
-  height:48px;
-  background-position:0 48.00806451612903%;
+   width:66px;
+  height:50px;
+  background-position:0 48.0703125%;
 }
 
 .icon--rain 
 {
-   width:64px;
-  height:64px;
-  background-position:99.70443349753694% 59.25925925925926%;
+   width:66px;
+  height:66px;
+  background-position:99.71014492753623% 58.92857142857143%;
 }
 
 .icon--star 
 {
-   width:64px;
-  height:64px;
-  background-position:59.11330049261084% 99.56481481481481%;
+   width:66px;
+  height:66px;
+  background-position:59.90338164251208% 99.58035714285714%;
 }
 
 .icon--twitter 
 {
-   width:51.78px;
-  height:42.06px;
-  background-position:94.04330452560171% 98.50700323226104%;
+   width:53.78px;
+  height:44.06px;
+  background-position:94.15199343125627% 98.55159026429745%;
 }
 
 .icon--wifi 
 {
-   width:60px;
-  height:64px;
-  background-position:68.79227053140097% 0;
+   width:62px;
+  height:66px;
+  background-position:68.43601895734596% 0;
 }
 
 .icon--youtube 
 {
-   width:34.75px;
-  height:42px;
-  background-position:36.69752421959096% 45.792307692307695%;
+   width:36.75px;
+  height:44px;
+  background-position:37.76931216931217% 45.917910447761194%;
 }
 
 .site-footer{
@@ -1254,7 +1261,10 @@ instead edit gulp/templates/sprite*/
         font-size:1rem;
         padding: 12px 0px
   
-  }
+  } 
+        .primary-nav a.is-current-link{
+            color:#fabb69;
+        }
     }
 
 .reveal-feature-item{
@@ -1270,4 +1280,103 @@ instead edit gulp/templates/sprite*/
         -webkit-transform:scale(1);
                 transform:scale(1);
     }
+
+.modal{
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all .5s ease-out;
+    transition: all .5s ease-out;
+position:fixed;
+background-color: rgba(255, 255, 255, .94);
+top:0;
+bottom:0;
+left:0;
+right:0;
+z-index: 5;
+
+
+}
+
+.modal--show{
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+ }
+
+.modal--description{
+    position:absolute;
+   left:40%;
+   top:3%;
+}
+
+.modal--close{
+        position: absolute;
+        top:15px;
+        right:15px;
+        -webkit-transform: scaleX(1.5);
+                transform: scaleX(1.5);
+        color:#2f5572;
+        font-weight:500;
+        cursor: pointer;
+        border: 1px solid rgba(47,85,114, .85); 
+        padding:5px;
+        border-radius:50%;
+    }
+
+.modal--close:hover{
+            color:#d59541;
+        font-size:1.5rem;
+        border: 1px solid rgba(213,149,65, .85); 
+        }
+
+.modal--center{      
+        
+    }
+
+.social-icons{
+ 
+   margin: auto;
+   width:500px;
+  padding-left:1rem;
+}
+
+@media(min-width: 530px){
+
+.social-icons{
+    text-align: center
+}
+    }
+
+.social-icons--icon{
+     margin:0 5px;
+     width:33%;
+     height:65px;
+     background-color: #d59541;
+     display:inline-block;
+     position: relative;
+ }
+
+@media(min-width: 530px){
+
+.social-icons--icon{
+        width:15%;
+        height:72px;
+        margin:auto
+ }
+    }
+
+.social-icons--icon .icon{
+        display:block;
+        position: absolute;
+        left:50%;
+        top:50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+
+     }
 

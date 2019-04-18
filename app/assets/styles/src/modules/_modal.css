@@ -1,0 +1,46 @@
+.modal{
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.2);
+    transition: all .5s ease-out;
+position:fixed;
+background-color: rgba(255, 255, 255, .94);
+top:0;
+bottom:0;
+left:0;
+right:0;
+z-index: 5;
+ &--show{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition: all .3s ease-in;
+ }
+&--description{
+    position:absolute;
+   left:40%;
+   top:3%;
+}
+&--close{
+        position: absolute;
+        top:15px;
+        right:15px;
+        transform: scaleX(1.5);
+        color:$mainBlue;
+        font-weight:500;
+        cursor: pointer;
+        border:1px solid rgba($mainBlue, .85); 
+        padding:5px;
+        border-radius:50%;
+        &:hover{
+            color:$mainOrange;
+        font-size:1.5rem;
+        border:1px solid rgba($mainOrange, .85); 
+        }
+    }
+    &--center{      
+        
+    }
+
+
+}

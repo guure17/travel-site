@@ -22,6 +22,12 @@ overflow: hidden;
         padding-bottom:3.785em;
     }
 
+    &--for-modal{
+        margin:auto;
+        width:500px;
+        padding-bottom:0;
+    }
+
 
 
 }
