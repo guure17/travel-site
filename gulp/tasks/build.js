@@ -41,11 +41,9 @@ gulp.task("optimizeImages",["deleteDocsFolder"],function(){
             }))
             .pipe(gulp.dest("./docs/assets/images"));
 });
-gulp.task("useminTrigger",["deleteDocsFolder"],function(){
-  gulp.start("usemin");
-});
+
 // this task buids both css and js from index.html
-gulp.task("usemin",["styles","scripts"],function(){
+gulp.task("usemin",["deleteDocsFolder","styles","scripts"],function(){
     return gulp.src("./app/index.html")
         .pipe(usemin({
         css:[function(){return rev()},function(){return cssnano()}],
@@ -53,6 +51,6 @@ gulp.task("usemin",["styles","scripts"],function(){
         }))
         .pipe(gulp.dest("./docs"));
 });
-gulp.task("build",["deleteDocsFolder","copyGeneralFiles","optimizeImages","useminTrigger","previewDocs"],function(){
+gulp.task("build",["deleteDocsFolder","copyGeneralFiles","optimizeImages","usemin","previewDocs"],function(){
 
 });
